@@ -1,0 +1,102 @@
+.person {
+    margin-top: 70px;
+    margin-bottom: 150px;
+}
+
+.person__title {
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 100px;
+    color: #000; /* Черный текст */
+}
+
+.person__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.person__info-info-title {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #000; /* Черный текст */
+}
+
+.person__info-info-login,
+.person__info-info-email,
+.person__info-info-pass {
+    font-size: 21px;
+    color: #E6B800; /* Желтый цвет для данных */
+}
+
+.person__info-info-login>span,
+.person__info-info-email>span,
+.person__info-info-pass>span{
+    color: #000; /* Черный цвет для описания */
+}
+
+.person__repass-title {
+    text-align: center;
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000; /* Черный текст */
+}
+
+.person__repass-repass-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    gap: 20px;
+}
+
+.repass-input{
+    width: 100%;
+    background-color: #F0E68C; /* Светло-желтый фон */
+    padding: 10px 20px;
+    color: #000; /* Черный текст */
+    font-size: 18px;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+}
+
+.repass-btn{
+    width: 100%;
+    background-color: #FFD700; /* Яркий желтый */
+    font-size: 18px;
+    color: #000; /* Черный текст */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+.repass-btn:hover{
+    background-color: #E6B800; /* Темно-желтый цвет */
+}
+
+.person__logOut {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.logout {
+    width: 100%;
+    background-color: #FFD700; /* Яркий желтый */
+    color: #000; /* Черный текст */
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+.logout:hover{
+    background-color: #E6B800;  /* Темно-желтый цвет */
+}

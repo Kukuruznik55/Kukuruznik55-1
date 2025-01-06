@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: url('depositphotos_7577225-stock-photo-empty-billiard-table.jpg.webp') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 90px;
+}
+
+.kii {
+  content: "";
+  position: absolute;
+  width: 470px;
+  height: 18px;
+  border-radius: 40%;
+  background-color: #302c23;
+  top: 220px;
+  left: 0px;
+  animation: palka 2s;
+  transform-origin: left center;
+}
+
+.target {
+position: absolute;
+  width: 55px;
+  height: 55px;
+  background: white;
+  border-radius: 50%;
+  top: 200px;
+  left: 606px;
+  animation: target 5s ease-in;
+  animation-delay: 1s;
+  transform-origin: left center;
+}
+
+.target2  {
+position: absolute;
+  width:55px;
+  height: 55px;
+  background: rgb(253, 89, 81);
+  border-radius: 50%;
+  top: 195px;
+  left: 766px;
+  animation: col 5s ease-in;
+  animation-delay: 1.5s;
+  transform-origin: left center;
+}
+
+.table {
+  margin: -40;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.table-container {
+  background: url('depositphotos_7577225-stock-photo-empty-billiard-table.jpg.webp') no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes col {
+  0% {
+  top: 194px;
+  left: 766px;
+  }
+  100% {
+  top: 164px;
+  left: 850px;
+  }
+}
+
+@keyframes palka {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(170px);
+  }
+}
+
+@keyframes target {
+  0% {
+    transform: translateX(0);
+  }
+50% {
+    transform: translateX(120px);
+  }
+  100% {
+    transform: rotate(100deg);
+transform: translateY(115px);
+  }
+}
