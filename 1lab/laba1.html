@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  
+    @font-face {
+      font-family: 'CustomFont';
+      src: local('CustomFont'), url('path/to/custom-font.woff') format('woff');
+    }
+
+ 
+    body {
+      font-family: 'CustomFont', Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #555;
+      color: white;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+    }
+
+    section {
+      margin: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      padding: 5px;
+      float: left; 
+      margin-right: 20px;
+    }
+    img.right {
+      float: right; 
+      margin-left: 20px; 
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    pre {
+      background-color: #f8f8f8;
+      padding: 10px;
+      overflow-x: auto;
+    }
+
+    code {
+      color: #333;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    footer li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+  <title>Java: язык программирования</title>
+</head>
+<body>
+
+  <header>
+    <h1>История, обзор и примеры кода на Java</h1>
+  </header>
+
+  <nav>
+    <h2>Содержание</h2>
+    <ul style="list-style-image: url('path/to/star-image.png');">
+      <li><a href="#history">История создания</a></li>
+      <li><a href="#overview">Краткий обзор языка</a></li>
+      <li><a href="#examples">Примеры кода</a></li>
+    </ul>
+  </nav>
+
+  <section id="history">
+    <h2>История создания</h2>
+    <p>Java была разработана компанией Sun Microsystems в 1995 году. Это был ответ на изменяющиеся требования в области программного обеспечения и появление новых технологий.</p>
+   
+    <img src="13931-java-e1546936987308.jpg" alt="Java Logo" class="left">
+  
+   
+    <p>Java стала известной своей многоплатформенностью, что означает, что приложения, написанные на Java, могут запускаться на различных устройствах, поддерживающих виртуальную машину Java (JVM).</p>
+    <p>Java продолжает оставаться одним из самых популярных языков программирования благодаря своей надежности и широкому спектру применения.</p>
+  </section>
+  <ol>
+      <li><strong>Java 1.0 (1995):</strong> Первая версия Java.</li>
+      <li><strong>Java 1.1 (1997):</strong> Добавлены новые библиотеки и функции.</li>
+      <li><strong>Java 2 (1998):</strong> Введены J2SE, J2EE, J2ME.</li>
+      <li><strong>Java 5 (2004):</strong> Поддержка generics, аннотации, enum-ы.</li>
+      <li><strong>Java 6 (2006):</strong> Поддержка скриптовых языков, улучшения в управлении памятью.</li>
+      <li><strong>Java 7 (2011):</strong> Введены try-with-resources, улучшения в строках и типах.</li>
+      <li><strong>Java 8 (2014):</strong> Лямбда-выражения, новый API для дат и времени.</li>
+      <li><strong>Java 9 (2017):</strong> Введены модули (Project Jigsaw), JShell.</li>
+      <li><strong>Java 10 (2018):</strong> Локальные переменные типа var, улучшения в системе сборки.</li>
+      <li><strong>Java 11 (2018):</strong> Версия с долгосрочной поддержкой (LTS).</li>
+      <li><strong>Java 12-17 (2019-2021):</strong> Постепенные улучшения и нововведения.</li>
+      <li><strong>Java 18 (ожидается в будущем):</strong> Планы на будущее развитие Java.</li>
+
+  </ol>
+  <section id="overview">
+    <h2>Краткий обзор языка</h2>
+    <div style="margin: 0 auto; width: 50%;">
+      <img src="Unknown.jpeg" alt="Java Code" style="width: 100%; display: block;">
+    </div>
+    <p>Java - объектно-ориентированный язык программирования, разработанный с акцентом на простоту и портативность кода. Он предоставляет широкий набор библиотек и инструментов для разработки разнообразных приложений.</p>
+   
+    <table>
+      <tr>
+        <th>Ключевое слово</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td>class</td>
+        <td>Определяет класс</td>
+      </tr>
+      <tr>
+        <td>public</td>
+        <td>Обозначает, что элемент доступен из любого другого класса</td>
+      </tr>
+      <tr>
+        <td>static</td>
+        <td>Означает, что метод или переменная принадлежит классу, а не экземпляру</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>Указывает, что метод не возвращает значение</td>
+      </tr>
+    </table>
+    <p>Java также известна своей строгой системой типов и автоматическим управлением памятью через сборщик мусора.</p>
+    <p>Существование богатого экосистема библиотек и фреймворков делает Java привлекательным выбором для разработчиков.</p>
+
+    <ul>
+      <li><strong>Платформенная независимость:</strong> Java является платформенно-независимым языком программирования, что означает, что апплеты Java могут выполняться на различных платформах без изменений.</li>
+        
+        <li><strong>Возможности для создания богатых интерфейсов:</strong> Используя Java, можно создавать более сложные и интерактивные элементы веб-страниц, такие как анимации, графику и другие богатые интерфейсные элементы.</li>
+        
+        <li><strong>Многозадачность:</strong> Java обладает поддержкой многозадачности, что позволяет создавать более сложные приложения с параллельным выполнением задач.</li>
+        
+        <li><strong>Безопасность:</strong> Апплеты Java предоставляют некоторый уровень безопасности, поскольку они выполняются в специальном виртуальном окружении (Java Virtual Machine), что ограничивает их доступ к ресурсам компьютера.</li>
+    </ul>
+
+</body>
+    </ul>
+
+  </section>
+
+  <section id="examples">
+    <h2>Примеры кода</h2> 
+     <img src="Unknown.png" alt="Sun Microsystems" class="right">
+    <p>Приведем пример кода на Java с использованием цветовой подсветки:</p>
+
+    <style>
+      .keyword {
+      color: #BA2121;
+      font-weight: bold;
+      }
+      
+      .variable {
+      color: #008000;
+      }
+      
+      .string-literal {
+      color: #BA2121;
+      }
+      </style>
+      </head>
+      
+      <body>
+      
+      
+      <h2 id="code">Примеры кода</h2>
+      
+      <pre><code>
+      <span class="keyword">public class</span> Calculator {
+      <span class="keyword">public static void</span> main(String[] args) {
+      <span class="keyword">int</span> num1 = <span class="variable">5</span>;
+      <span class="keyword">int</span> num2 = <span class="variable">7</span>;
+      <span class="keyword">int</span> sum = num1 + num2;
+      
+      System.out.println(<span class="string-literal">"Сумма чисел "</span> + num1 + <span class="string-literal">" и "</span> + num2 + <span class="string-literal">" равна "</span> + sum);
+      }
+      }
+      </code></pre>
+
+  </section>
+
+  <footer>
+    <h2>Использованные теги и CSS-свойства</h2>
+    <ul>
+      <li>&lt;html&gt;</li>
+      <li>&lt;title&gt;</li>
+      <li>&lt;head&gt;</li>
+      <li>&lt;body&gt;</li>
+      <li>&lt;link&gt;</li>
+      <li>&lt;address&gt;</li>
+      <li>&lt;div&gt;</li>
+      <li>&lt;p&gt;</li>
+      <li>&lt;h1&gt;</li>
+      <li>&lt;h2&gt;</li>
+      <li>&lt;div&gt;</li>
+      <li>&lt;ol&gt;</li>
+      <li>&lt;li&gt;</li>
+      <li>&lt;table&gt;</li>
+      <li>&lt;tr&gt;</li>
+      <li>&lt;td&gt;</li>
+      <li>&lt;ul&gt;</li>
+      <li>&lt;caption&gt;</li>
+      <li>&lt;thead&gt;</li>
+      <li>&lt;tbody&gt;</li>
+      <li>&lt;span&gt;</li>
+      <li>&lt;img&gt;</li>
+      <li>&lt;a&gt;</li>
+      <li>&lt;th&gt;</li>
+      <li>&lt;hr&gt;</li>
+      <li>&lt;i&gt;</li>
+      <li>&lt;ins&gt;</li>
+      <li>&lt;doctype&gt;</li>
+      <li>&lt;b&gt;</li>
+      <li>&lt;blockquote&gt;</li>
+      <li>&lt;small&gt;</li>
+      <li>&lt;meta&gt;</li>
+
+      <ul class="custom-marker">
+        <li>font-size</li>
+        <li>text-aligh</li>
+        <li>font-family</li>
+        <li>text-indent</li>
+        <li>padding</li>
+        <li>padding-left</li>
+        <li>padding-right</li>
+        <li>padding-bottom</li>
+        <li>padding-top</li>
+        <li>list-style-image</li>
+        <li>color</li>
+        <li>background</li>
+        <li>border</li>
+        <li>width</li>
+        <li>height</li>
+        <li>float</li>
+        <li>overflow</li>
+        <li>margin</li>
+        <li>border-collapse</li>
+        <li>text-transform</li>
+        <li>border-right</li>
+        <li>border-bottom</li>
+        <li>margin-left</li>
+        <li>font-stretch</li>
+        <li>border-bottom-left-radius</li>
+        <li>border-bottom-right-radius</li>
+        <li>border-top-left-radius</li>
+      </ul>
+    </div>
+
+    </ul>
+  </footer>
+
+</body>
+</html>

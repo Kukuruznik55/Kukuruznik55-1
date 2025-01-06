@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #45434c;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calculator {
+      background: #c2c1c1;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgb(255, 255, 255);
+    }
+
+    .screen {
+      border: 2px solid #3f04ee;
+      background: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      text-align: right;
+      font-size: 24px;
+      color: #3f04ee;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+    }
+
+    button {
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: linear-gradient(to right, #3f04ee, #240385);
+      color: #fff;
+      transition: background 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #3f04ee, #240385);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calculator">
+    <h2 style="text-align: center; color: #3f04ee;">Calculator</h2>
+    <div class="screen" id="screen">0</div>
+    <div class="buttons" onclick="calculate(event)">
+      <button>C</button>
+      <button>CE</button>
+      <button>←</button>
+      <button>/</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>*</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>-</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>+</button>
+      <button>±</button>
+      <button>0</button>
+      <button>.</button>
+      <button>=</button>
+    </div>
+  </div>
+
+  <script>
+    let currentInput = '0';
+    let currentOperator = '';
+    let memory = 0;
+
+    function calculate(event) {
+      const buttonValue = event.target.textContent;
+
+      if (buttonValue === 'C') {
+        currentInput = '0';
+        currentOperator = '';
+      } else if (buttonValue === 'CE') {
+        currentInput = '0';
+      } else if (buttonValue === '←') {
+        currentInput = currentInput.slice(0, -1) || '0';
+      } else if (buttonValue === '=') {
+        try {
+          const result = eval(memory + currentOperator + currentInput);
+          if (!isFinite(result)) {
+            throw new Error("Деление на ноль!");
+          }
+          currentInput = result.toString();
+          currentOperator = '';
+        } catch (error) {
+          currentInput = "Ошибка: " + error.message;
+          currentOperator = '';
+        }
+      } else if (['+', '-', '*', '/'].includes(buttonValue)) {
+        memory = parseFloat(currentInput);
+        currentOperator = buttonValue;
+        currentInput = '0';
+      } else if (buttonValue === '±') {
+        currentInput = (-parseFloat(currentInput)).toString();
+      } else if (buttonValue === '.') {
+        if (!currentInput.includes('.')) {
+          currentInput += buttonValue;
+        }
+      } else {
+        if (currentInput === '0' || currentInput === '-0') {
+          currentInput = buttonValue;
+        } else {
+          currentInput += buttonValue;
+        }
+      }
+
+      document.getElementById('screen').textContent = currentInput;
+    }
+  </script>
+</body>
+</html>
