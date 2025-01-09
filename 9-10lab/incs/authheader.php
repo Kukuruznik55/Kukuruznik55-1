@@ -14,9 +14,7 @@
 <header id="header-section">
         <div class="container">
             <div class="header">
-                <div class="header-logo">
-                    <a href="authindex.php"><img class="header-logo__img" src="img/main/log.jpg" alt="logo"></a>
-                </div>
+               
                 <nav class="nav-main">
                     <ul class="nav-main__list">
                         <li class="nav-main__item">

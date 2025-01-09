@@ -1,102 +1,115 @@
 .person {
-    margin-top: 70px;
-    margin-bottom: 150px;
+    margin-top: 90px;
+    margin-bottom: 180px;
 }
 
 .person__title {
-    font-size: 52px;
+    font-size: 60px;
     text-align: center;
-    margin-bottom: 100px;
-    color: #000; /* Черный текст */
+    margin-bottom: 120px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .person__info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 200px;
+    align-items: flex-start;
+    gap: 150px;
 }
 
 .person__info-info-title {
-    font-size: 27px;
-    font-weight: 600;
-    margin-bottom: 25px;
-    color: #000; /* Черный текст */
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #34495e;
 }
 
 .person__info-info-login,
 .person__info-info-email,
 .person__info-info-pass {
-    font-size: 21px;
-    color: #E6B800; /* Желтый цвет для данных */
+    font-size: 22px;
+    color: #2980b9;
+    line-height: 1.8;
 }
 
 .person__info-info-login>span,
 .person__info-info-email>span,
 .person__info-info-pass>span{
-    color: #000; /* Черный цвет для описания */
+    color: #34495e;
+    font-weight: 500;
 }
 
 .person__repass-title {
     text-align: center;
-    font-size: 27px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #000; /* Черный текст */
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #34495e;
+    margin-top: 50px;
 }
 
 .person__repass-repass-form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
-    gap: 20px;
+    width: 300px;
+    gap: 25px;
+    margin: 0 auto;
 }
 
 .repass-input{
     width: 100%;
-    background-color: #F0E68C; /* Светло-желтый фон */
-    padding: 10px 20px;
-    color: #000; /* Черный текст */
+    background-color: #ecf0f1;
+    padding: 14px 20px;
+    color: #333;
     font-size: 18px;
-    border: 1px solid #FFD700;
-    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+
+.repass-input:focus{
+    border-color: #3498db;
 }
 
 .repass-btn{
     width: 100%;
-    background-color: #FFD700; /* Яркий желтый */
+    background-color: #3498db;
     font-size: 18px;
-    color: #000; /* Черный текст */
-    padding: 10px 20px;
+    color: #fff;
+    padding: 14px 20px;
     cursor: pointer;
-    transition: all .3s;
-    border-radius: 5px;
+    transition: all 0.3s;
+    border-radius: 7px;
+    font-weight: 700;
 }
 
 .repass-btn:hover{
-    background-color: #E6B800; /* Темно-желтый цвет */
+    background-color: #2980b9;
 }
 
 .person__logOut {
-    width: 300px;
+    width: 350px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .logout {
     width: 100%;
-    background-color: #FFD700; /* Яркий желтый */
-    color: #000; /* Черный текст */
-    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 14px 20px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
-    transition: all .3s;
-    border-radius: 5px;
+    transition: all 0.3s;
+    border-radius: 7px;
 }
 
 .logout:hover{
-    background-color: #E6B800;  /* Темно-желтый цвет */
+    background-color: #c0392b;
 }

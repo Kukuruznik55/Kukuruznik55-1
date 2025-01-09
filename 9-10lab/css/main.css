@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap');
 
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    color: #F0F0F0; /* Светло-желтый фон */
-    font: 16px/28px 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
-    background-color: #F9E79A; /* Ярко-желтый фон */
+    color: #333333;
+    font: 18px/30px 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
 }
 
 a {
     color: inherit;
     text-decoration: none;
-    transition: .4s;
-    color: #000000;
+    transition: .3s;
+    color: #2c3e50;
 }
 
 ul li {
@@ -26,91 +26,94 @@ ul li {
 img {
     max-width: 100%;
     max-height: 100%;
-    border-color: #000000;
+    border: none;
 }
 
 button {
     display: block;
     border: none;
-    background-color: #FFD700; /* Яркий желтый */
-    color: #000; /* Черный текст */
+    background-color: #3498db;
+    color: #fff;
     font: inherit;
     cursor: pointer;
-    transition: .4s;
-    padding: 12px 24px;
-    border-radius: 5px;
-    font-weight: 600;
+    transition: .3s;
+    padding: 14px 28px;
+    border-radius: 7px;
+    font-weight: 700;
 }
 
 button:hover {
-    background-color: #ffd000; /* Более темный оттенок при наведении */
+    background-color: #2980b9;
 }
 
 .container {
-    max-width: 1230px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .title-section {
-    margin-bottom: 40px;
-    font-size: 52px;
-    line-height: 64px;
-    letter-spacing: 0.6px;
+    margin-bottom: 50px;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 1px;
     text-align: center;
-    color: #000; /* Черный текст заголовков */
+    color: #2c3e50;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 
 .btn-primary {
-    background-color: #FFD700; /* Яркий желтый */
-    color: #000;
+    background-color: #3498db;
+    color: #fff;
     
 }
 
 
 .btn-primary:hover {
-    background-color: #E6B800; /* Более темный оттенок при наведении */
+    background-color: #2980b9;
 }
 
 
 .btn-secondary {
-    padding: 12px 24px;
-    border: 1px solid #FFD700; /* Яркий желтый */
-    color: #FFD700; /* Яркий желтый */
-    font-weight: 600;
-    line-height: 24px;
+    padding: 14px 28px;
+    border: 2px solid #3498db;
+    color: #3498db;
+    font-weight: 700;
+    line-height: 26px;
+    border-radius: 7px;
+    transition: all 0.3s;
 }
 
 .btn-secondary:hover {
-    color: #000; /* Черный текст */
-    background-color: #FFD700; /* Яркий желтый */
+    color: #fff;
+    background-color: #3498db;
 }
 
-/* Header */
 #header-section {
-    padding: 40px 0 40px;
-    background-color: #FFDAB9; /* Светло-оранжевый фон */
-    
+    padding: 50px 0;
+    background-color: #ecf0f1;
 }
 
 .header {
     position: fixed;
     display: flex;
-    width: 100%; /* 100% ширина */
-    z-index: 99999;
+    width: 100%;
+    z-index: 1000;
     justify-content: space-between;
     align-items: center;
-    font-weight: 600;
-    background-color: #FFDAB9; /* Светло-оранжевый фон */
-    color: #000; /* Черный текст */
-    padding: 15px;
+    font-weight: 700;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .header-logo__img,
 .footer-about__img {
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
 }
 
 .nav-main {
@@ -119,16 +122,17 @@ button:hover {
 
 .nav-main__list {
     display: flex;
-    gap: 48px;
-    margin-right: 72px;
+    gap: 56px;
+    margin-right: 80px;
 }
 
 .nav-main__link {
-    color: #000;
+    color: #2c3e50;
+    font-size: 20px;
 }
 
 .nav-main__link:hover {
-    color: #FFD700; /* Яркий желтый */
+    color: #3498db;
 }
 
 
@@ -140,27 +144,41 @@ button:hover {
 
 
 .btn-primary1 {
-    padding: 8px 18px;
-    font-weight: 600;
-    background-color: #FFD700; /* Яркий желтый */
-    color: #000;
+    padding: 10px 20px;
+    font-weight: 700;
+    background-color: #e67e22;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary1:hover {
+    background-color: #d35400;
 }
 
 .dropbtn {
-    content: "&#9660;";
-    background-color: #FFD700; /* Яркий желтый */
-    color: #000;
-    padding: 8px 18px;
-    font-size: 16px;
+    background-color: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #ffd000; /* Более темный оттенок при наведении */
+    background-color: #d35400;
 }
-
+.dropbtn::after {
+    content: "\25BC";
+    margin-left: 8px;
+    font-size: 16px;
+}
 .dropdown {
     position: relative;
     display: inline-block;
@@ -169,123 +187,128 @@ button:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1; /* Светло-серый фон */
-    min-width: 160px;
+    background-color: #fff;
+    min-width: 200px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
 .dropdown-content a {
-    color: #000000;
-    padding: 12px 16px;
+    color: #333;
+    padding: 14px 20px;
     text-decoration: none;
     display: block;
+    transition: background-color 0.3s ease;
 }
 
-.dropdown a:hover {
-    background-color: #ddd;
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
 }
-
-/* ... (rest of your styles) */
 
 @media(max-width: 894px) {
-    /* ... (media query styles) */
     .header {
         flex-direction: column;
-        align-items: center; /* Центрирование элементов по вертикали */
-        padding: 15px;
+        align-items: center;
+        padding: 20px;
     }
     .nav-main__list {
         flex-direction: column;
-        gap: 24px;
+        gap: 30px;
         margin: 0;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     .nav-main__link {
-       padding: 10px;
-       border-bottom: 1px solid #000;
+       padding: 12px;
+       border-bottom: 1px solid #ddd;
+       text-align: center;
     }
     .nav-main__list {
         text-align: center;
     }
 
-   
 }
 @media(max-width: 787px) {
     #banner-section {
-        background-color: #171717;
+        background-color: #34495e;
         background-image: url(../img/main/baner-main2.png);
         background-position: center;
+        background-size: cover;
     }
     #header-section {
-        background-color: #171717;
+        background-color: #34495e;
     }
 }
 
 @media(max-width: 474px) {
     .dropbtn {
-        font-size: 14px;
+        font-size: 16px;
+        padding: 8px 16px;
     }
     .btn-primary1 {
-        font-size: 14px;
-        padding: 7px 7px;
+        font-size: 16px;
+        padding: 10px 16px;
     }
 }
 
-/* Banner */
+
 #banner-section {
     position: relative;
     overflow: hidden;
-    margin-top: 50px;
-    padding-bottom: 60px;
+    margin-top: 60px;
+    padding-bottom: 80px;
+    background-color: #2c3e50;
+    color: #fff;
 }
 
 .banner {
-    max-width: 475px;
-    padding-top: 45px;
+    max-width: 550px;
+    padding-top: 60px;
 }
 
 .banner__header {
-    font-size: 52px;
-    line-height: 64px;
-    letter-spacing: 0.6px;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
 
 .banner__text {
-    margin: 32px 0 48px;
-    color: rgb(255 255 255 / 80%);
-    font-size: 17px;
+    margin: 40px 0 50px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    line-height: 32px;
 }
 
 .banner-links-wrap {
     display: flex;
     align-items: center;
-    gap: 35px;
-    margin-bottom: 40px;
+    gap: 40px;
+    margin-bottom: 50px;
 }
 
 .banner-features__text {
-    font-weight: 600;
-    line-height: 24px;
+    font-weight: 700;
+    line-height: 28px;
 }
 
 .banner-features__text:first-child {
-    margin-right: 40px;
+    margin-right: 50px;
 }
 
 .banner-features__text_strong {
-    margin-right: 16px;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 52px;
+    margin-right: 20px;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 60px;
     vertical-align: sub;
 }
 
 .banner-img {
     position: absolute;
-    width: 60%;
+    width: 55%;
     height: 100%;
     top: 0;
     right: 0;
@@ -297,9 +320,12 @@ button:hover {
     z-index: 2;
     top: 0;
     right: 0;
-    width: 96%;
+    width: 100%;
     height: 100%;
     background: url(../img/main/baner-main2.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    
 }
 
 .banner-img::after {
@@ -308,16 +334,17 @@ button:hover {
     z-index: 1;
     top: 0;
     right: 0;
-    width: 75%;
+    width: 70%;
     height: 100%;
-    background-color: rgb(52 52 52 / 30%);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 @media(max-width: 787px) {
     #banner-section {
-        background-color: #171717;
+        background-color: #34495e;
         background-image: url(../img/main/baner-main2.png);
         background-position: center;
+        background-size: cover;
     }
     .banner-img {
         display: none;
@@ -341,38 +368,62 @@ button:hover {
         padding-bottom: 0;
     }
     .banner__header {
-        font-size: 44px;
-        line-height: 54px;
-        letter-spacing: 0.3px;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 0.5px;
     }
     .banner__text {
         color: #fff;
+        font-size: 18px;
+        line-height: 30px;
     }
 }
 
-/* Rent */
+
 #rent-section {
-    padding: 120px 0;
+    padding: 140px 0;
+    background-color: #ecf0f1;
 }
 
 .rent-wrap {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 40px;
 }
 
 .rent {
-    max-width: 584px;
-    max-height: 584px;
+    max-width: 600px;
+    max-height: 600px;
     flex: 1 1 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.rent:hover {
+    transform: translateY(-5px);
 }
 
 .rent-content {
     background-image: url(../img/main/Приора.jpg);
     background-position: center;
-    padding: 47px 47px;
-    -webkit-filter: brightness(100%);
+    background-size: cover;
+    padding: 50px;
+    transition: filter 0.5s ease;
+    position: relative;
+    
+}
+.rent-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Overlay для читаемости текста */
+    opacity: 0.8;
 }
 
 .rent-content2 {
@@ -388,31 +439,36 @@ button:hover {
 }
 
 .rent-content:hover {
-    -webkit-filter: brightness(70%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+    filter: brightness(1.1);
 }
 
 .rent__name {
-    font-size: 40px;
-    line-height: 52px;
-    letter-spacing: 0.6;
+    font-size: 44px;
+    line-height: 56px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #fff;
+    position: relative; /* Устанавливаем позицию relative для z-index */
+    z-index: 2; /* Устанавливаем z-index для перекрытия overlay */
 }
+
 
 .rent__link {
     display: inline-block;
-    margin-top: 70%;
-    margin-left: 62%;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 32px;
+    margin-top: 65%;
+    margin-left: 60%;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 2;
 }
 
 .rent__link:hover {
-    color: #9c27b0; /* Фиолетовый */
+    color: #3498db;
 }
 
 @media(max-width: 1230px) {
@@ -428,94 +484,91 @@ button:hover {
 
 @media(max-width: 474px) {
     #rent-section {
-        padding: 90px 0;
+        padding: 100px 0;
     }
     .title-section {
-        font-size: 28px;
+        font-size: 32px;
     }
 }
 
-/* Destination */
-
-/* Location */
 #location-section {
     text-align: center;
-    padding-bottom: 102px;
+    padding-bottom: 120px;
 }
 
-/* Footer */
 #footer-section {
-    padding-top: 40px;
-    background-color: #1F1905;
+    padding-top: 50px;
+    background-color: #2c3e50;
+    color: #fff;
 }
 
 .footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 55px;
+    padding-bottom: 60px;
 }
 
 .footer-logo-wrap {
     display: flex;
     align-items: center;
-    gap: 17px;
-    margin-bottom: 64px;
-    font-weight: 600;
+    gap: 20px;
+    margin-bottom: 70px;
+    font-weight: 700;
 }
 
 .footer-about__text {
-    max-width: 235px;
-    font-size: 18px;
-    line-height: 32px;
+    max-width: 300px;
+    font-size: 20px;
+    line-height: 34px;
+    color: rgba(255,255,255,0.8)
 }
 
 .footer-nav-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    gap: 45px;
+    align-items: flex-start;
+    gap: 50px;
     margin: 0 auto;
 }
 
 .footer-nav__header {
-    margin-bottom: 32px;
-    font-size: 18px;
-    line-height: 20px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    
 }
 
 .footer-nav__item {
-    margin-bottom: 28px;
-    line-height: 20px;
+    margin-bottom: 30px;
+    line-height: 24px;
 }
 
 .footer-nav__link {
-    color: rgb(255 255 255 / 80%);
+    color: rgba(255,255,255,0.8);
+    transition: color 0.3s ease;
 }
 
 .footer-nav__link:hover {
-    text-decoration: underline;
+    color: #3498db;
 }
 
 .footer-social__link {
     display: block;
     width: 120px;
     height: 30px;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
     background: url(../img/main/social_1.svg) 50%/cover no-repeat;
 }
 
 .footer-copyright {
-    padding: 20px 0;
-    background-color: #9c27b0; /* Фиолетовый */
+    padding: 25px 0;
+    background-color: #2980b9;
 }
 
 .footer-copyright__text {
     text-align: center;
+    font-size: 13px;
 }
-
-@media(max-width: 787px) {
-    
-}
-

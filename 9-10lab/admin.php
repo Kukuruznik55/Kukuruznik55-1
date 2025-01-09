@@ -3,99 +3,116 @@
 <head>
     <title>Админ панель</title>
     <style>
-       body {
-    font-family: Arial, sans-serif;
-    background-color: #F9E79A; /* Ярко-желтый фон */
-    color: #000; /* Черный текст */
+      body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
 }
 
 .registration-header {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
-    color: #000; /* Черный текст */
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .books__form {
-    width: 300px;
-    margin: 70px auto 150px;
+    width: 350px;
+    margin: 80px auto 160px;
     text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .books__form-input {
     width: 100%;
     font-size: 18px;
-    background-color: #F0E68C; /* Светло-желтый фон */
-    color: #000; /* Черный текст */
-    padding: 10px 20px;
-    border: 2px solid #FFD700; /* Яркий желтый цвет */
+    background-color: #ecf0f1;
+    color: #333;
+    padding: 12px 20px;
+    border: 1px solid #bdc3c7;
     border-radius: 5px;
-    margin: 5px 0;
+    margin: 8px 0;
+    transition: border-color 0.3s ease;
 }
 
 .books__form-input:focus {
     outline: none;
-    border: 2px solid #FFD700; /* Яркий желтый цвет */
+    border-color: #3498db;
 }
 
 .books__form-input::placeholder {
-    color: #E6B800; /* Золотистый желтый цвет */
+    color: #95a5a6;
 }
 
 .books__form-button {
-    background-color: #FFD700; /* Яркий желтый */
-    padding: 10px 20px;
-    color: #000; /* Черный текст */
+    background-color: #3498db;
+    padding: 14px 20px;
+    color: #fff;
     width: 100%;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
 
 .books__form-button:hover {
-    background-color: #E6B800; /* Темно-желтый */
+    background-color: #2980b9;
 }
 
 .logout {
-    background-color: #FFD700; /* Яркий желтый */
-    color: #000; /* Черный текст */
-    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 14px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
     width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
 }
 
 .logout:hover {
-    background-color: #E6B800; /* Темно-желтый */
+    background-color: #c0392b;
 }
 
 th {
-    color: #FFD700; /* Яркий желтый */
+    color: #3498db;
+    font-weight: 700;
 }
 
 table {
     box-sizing: border-box;
     border-collapse: collapse;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 th,
 td {
-    border: 1px solid #000; /* Черная граница */
-    padding: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
     text-align: center;
-    color: #000; /* Черный текст */
+    color: #333;
 }
 
 th {
-    background-color: #F0E68C; /* Светло-желтый фон */
+    background-color: #ecf0f1;
 }
     </style>
 </head>
